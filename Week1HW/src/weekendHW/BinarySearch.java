@@ -8,7 +8,6 @@ public class BinarySearch {
 		int[] arr = new int[]{1, 2, 3, 4, 5};
 		
 		System.out.println(binarySearch(arr, 4));
-
 	}
 	
 	public static int binarySearch(int[] arr, int target){
