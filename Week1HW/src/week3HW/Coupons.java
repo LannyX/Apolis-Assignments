@@ -1,5 +1,5 @@
 package week3HW;
-//
+//2
 import java.util.*;
 class Solution {
 
