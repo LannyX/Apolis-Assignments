@@ -11,7 +11,7 @@ public class RemoveDuplicate {
 		removeDupicate(A);
 	}
 	
-	static void removeDupicate(int[] array) {
+	static String removeDupicate(int[] array) {
 		int size = 0;
 		
 		if(array == null || array.length < 1) {
@@ -25,6 +25,6 @@ public class RemoveDuplicate {
 			}
 		}
 		int res = size + 1;
-		System.out.print( "Total unique number is: " + res);
+		return "Total unique number is: " + res;
 	}
 }

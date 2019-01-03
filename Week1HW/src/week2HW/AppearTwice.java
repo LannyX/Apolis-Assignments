@@ -1,5 +1,8 @@
 package week2HW;
 
+import java.awt.List;
+import java.util.ArrayList;
+
 public class AppearTwice {
 
 	public static void main(String[] args) {
@@ -9,10 +12,11 @@ public class AppearTwice {
 		
 	}
 	
-	static void appearTwice(int[] arr){
+	static ArrayList<Integer> appearTwice(int[] arr){
 		
 		int[] newArr = SelectionSort(arr);
 		int count = 1;
+		ArrayList<Integer> al = new ArrayList<Integer>();
 		for(int i = 0; i < newArr.length - 1; i++){
 			for(int j = i + 1; j < newArr.length; j++){
 				if(newArr[i] == newArr[j]){
@@ -22,11 +26,13 @@ public class AppearTwice {
 			}
 			if (count == 2 && newArr[i+1] == -1){
 				if (newArr[i] > 0) {
-					System.out.println(newArr[i]);
+					//System.out.print(newArr[i]);
+					al.add(newArr[i]);
 				}
 			}
 			count = 1;
 		}
+		return al;
 	}
 
 	private static int[] SelectionSort(int[] arr) {

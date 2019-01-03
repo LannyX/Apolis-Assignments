@@ -12,5 +12,15 @@ public class StringOnlyDigits {
 			System.out.println("String contains letters.");
 		}
 	}
+	
+	public static boolean isOnlyDigits(String s){
+		
+		if (s.matches("\\d*")) {
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
 
 }

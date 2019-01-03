@@ -1,7 +1,7 @@
 package week3HW;
 //2
 import java.util.*;
-class Solution {
+public class Coupons {
 
     static List<Map<String, Object>> personalizeCoupons(List<Map<String, Object>> coupons,
         List<String> perferredCategories) {

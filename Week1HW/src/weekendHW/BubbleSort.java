@@ -19,7 +19,7 @@ public class BubbleSort {
 
 	}
 	
-	public static void bubbleSort(int[] arr){
+	public static int[] bubbleSort(int[] arr){
 		if (arr.length == 0 || arr == null){
 			System.out.println("This is an empty array");
 		}
@@ -32,6 +32,7 @@ public class BubbleSort {
 				}
 			}
 		}
+		return arr;
 	}
 
 }
